@@ -1,0 +1,654 @@
+[INFO]  JReleaser 1.19.0
+------------------------------------------------------------
+jreleaser 1.19.0
+------------------------------------------------------------
+Build time:   2025-06-30 18:28:25Z
+Revision:     ecaef0d76d84f702c96e129073966bafa145456a
+JVM:          23.0.2 (Oracle Corporation 23.0.2+7-58)
+------------------------------------------------------------
+[INFO]    - basedir set to C:\Users\tyler\OneDrive\Documents\code\awt-compose-scaffold-mp\scaffold-desktop
+[INFO]    - outputdir set to C:\Users\tyler\OneDrive\Documents\code\awt-compose-scaffold-mp\scaffold-desktop\build\jreleaser
+[DEBUG]   - basedir set to C:\Users\tyler\OneDrive\Documents\code\awt-compose-scaffold-mp\scaffold-desktop
+[DEBUG]   - baseOutputDirectory set to C:\Users\tyler\OneDrive\Documents\code\awt-compose-scaffold-mp\scaffold-desktop\build
+[DEBUG]   - outputDirectory set to C:\Users\tyler\OneDrive\Documents\code\awt-compose-scaffold-mp\scaffold-desktop\build\jreleaser
+[DEBUG]   - checksumDirectory set to C:\Users\tyler\OneDrive\Documents\code\awt-compose-scaffold-mp\scaffold-desktop\build\jreleaser\checksums
+[DEBUG]   - catalogsDirectory set to C:\Users\tyler\OneDrive\Documents\code\awt-compose-scaffold-mp\scaffold-desktop\build\jreleaser\catalogs
+[DEBUG]   - signaturesDirectory set to C:\Users\tyler\OneDrive\Documents\code\awt-compose-scaffold-mp\scaffold-desktop\build\jreleaser\signatures
+[DEBUG]   - prepareDirectory set to C:\Users\tyler\OneDrive\Documents\code\awt-compose-scaffold-mp\scaffold-desktop\build\jreleaser\prepare
+[DEBUG]   - packageDirectory set to C:\Users\tyler\OneDrive\Documents\code\awt-compose-scaffold-mp\scaffold-desktop\build\jreleaser\package
+[DEBUG]   - downloadDirectory set to C:\Users\tyler\OneDrive\Documents\code\awt-compose-scaffold-mp\scaffold-desktop\build\jreleaser\download
+[DEBUG]   - assembleDirectory set to C:\Users\tyler\OneDrive\Documents\code\awt-compose-scaffold-mp\scaffold-desktop\build\jreleaser\assemble
+[DEBUG]   - artifactsDirectory set to C:\Users\tyler\OneDrive\Documents\code\awt-compose-scaffold-mp\scaffold-desktop\build\jreleaser\artifacts
+[DEBUG]   - deployDirectory set to C:\Users\tyler\OneDrive\Documents\code\awt-compose-scaffold-mp\scaffold-desktop\build\jreleaser\deploy
+[INFO]  git-root-search set to false
+[INFO]  Loading variables from C:\Users\tyler\.jreleaser\config.properties
+[WARN]  Variables source C:\Users\tyler\.jreleaser\config.properties does not exist
+[DEBUG] The following variables are defined in the current environment:
+[DEBUG]   JRELEASER_GPG_PASSPHRASE
+[DEBUG]   JRELEASER_GPG_PRIVATE_KEY_PATH
+[DEBUG]   JRELEASER_GPG_PUBLIC_KEY_PATH
+[DEBUG]   JRELEASER_MAVENCENTRAL_PASSWORD
+[DEBUG]   JRELEASER_MAVENCENTRAL_USERNAME
+[INFO]  Validating configuration
+[INFO]  Strict mode set to false
+[DEBUG]   [validation] --== DEPLOY ==--
+[DEBUG]   [validation] hooks
+[DEBUG]   [validation] hooks.command
+[DEBUG]   [validation] - disabled
+[DEBUG]   [validation] hooks.script
+[DEBUG]   [validation] - disabled
+[DEBUG]   [validation] - disabled
+[DEBUG]   [validation] project
+[DEBUG]   [validation] project.languages.java
+[DEBUG]   [validation] download
+[DEBUG]   [validation] catalog.swid
+[DEBUG]   [validation] assemble
+[DEBUG]   [validation] - disabled
+[DEBUG]   [validation] signing
+[DEBUG]   [validation] checksum
+[DEBUG]   [validation] deploy
+[DEBUG]   [validation] deploy.maven
+[DEBUG]   [validation] deploy.maven.mavenCentral
+[DEBUG]   [validation] deploy.maven.mavenCentral.scaffold-desktop
+[DEBUG]   [validation] upload
+[DEBUG]   [validation] catalog
+[DEBUG]   [validation] catalog.sbom
+[DEBUG]   [validation] catalog.sbom.cyclonedx
+[DEBUG]   [validation] - disabled
+[DEBUG]   [validation] catalog.sbom.syft
+[DEBUG]   [validation] - disabled
+[DEBUG]   [validation] catalog.github
+[DEBUG]   [validation] - disabled
+[DEBUG]   [validation] catalog.slsa
+[DEBUG]   [validation] - disabled
+[DEBUG]   [validation] announce
+[DEBUG]   [validation] - disabled
+[DEBUG]   [postvalidation] project
+[DEBUG]   [postvalidation] signing
+environment:
+ 
+hooks:
+    enabled: false
+    active: NEVER
+    command:
+        enabled: false
+        active: NEVER
+    script:
+        enabled: false
+        active: NEVER
+ 
+project:
+    name: scaffold-desktop
+    version: 1.0.0
+    versionPattern: SEMVER
+    snapshot:
+        enabled: false
+        pattern: .*-SNAPSHOT
+        label: early-access
+        fullChangelog: false
+    stereotype: NONE
+    languages:
+        java:
+            enabled: true
+            version: 23
+            groupId: io.github.nullpops
+            artifactId: scaffold-desktop
+            jvmOptions:
+            environmentVariables:
+            multiProject: true
+ 
+platform:
+ 
+ 
+checksum:
+    name: checksums.txt
+    individual: false
+    algorithms:
+        SHA_256
+    artifacts: true
+    files: true
+ 
+signing:
+    enabled: true
+    active: ALWAYS
+    armored: true
+    verify: true
+    mode: MEMORY
+    artifacts: true
+    files: true
+    checksums: true
+    catalogs: true
+    passphrase: ************
+    publicKey: ************
+    secretKey: ************
+ 
+announce:
+    enabled: true
+    article:
+        enabled: false
+        commitAuthor:
+        repository:
+            enabled: false
+            name: article
+            token: **unset**
+    bluesky:
+        enabled: false
+        handle: **unset**
+        password: **unset**
+    discord:
+        enabled: false
+        webhook: **unset**
+    discourse:
+        enabled: false
+        apiKey: **unset**
+        username: **unset**
+    discussions:
+        enabled: false
+    gitter:
+        enabled: false
+        webhook: **unset**
+    googlechat:
+        enabled: false
+        webhook: **unset**
+    linkedin:
+        enabled: false
+        owner: **unset**
+        accessToken: **unset**
+    smtp:
+        enabled: false
+        auth: false
+        password: **unset**
+    mastodon:
+        enabled: false
+        accessToken: **unset**
+    mattermost:
+        enabled: false
+        webhook: **unset**
+        structuredMessage: true
+    opencollective:
+        enabled: false
+        token: **unset**
+    sdkman:
+        enabled: false
+        consumerKey: **unset**
+        consumerToken: **unset**
+    slack:
+        enabled: false
+        webhook: **unset**
+        token: **unset**
+    teams:
+        enabled: false
+        webhook: **unset**
+    telegram:
+        enabled: false
+        token: **unset**
+        chatId: **unset**
+    twitter:
+        enabled: false
+        consumerKey: **unset**
+        consumerSecret: **unset**
+        accessToken: **unset**
+        accessTokenSecret: **unset**
+    zulip:
+        enabled: false
+        apiKey: **unset**
+ 
+packagers:
+    appimage:
+        enabled: false
+        continueOnError: false
+        commitAuthor:
+        requiresTerminal: false
+        repository:
+            enabled: false
+            name: appimage
+            token: **unset**
+    asdf:
+        enabled: false
+        continueOnError: false
+        commitAuthor:
+        repository:
+            enabled: false
+            name: asdf
+            token: **unset**
+    brew:
+        enabled: false
+        continueOnError: false
+        commitAuthor:
+        multiPlatform: false
+        repository:
+            enabled: false
+            name: homebrew-tap
+            token: **unset**
+        cask:
+            enabled: false
+    chocolatey:
+        enabled: false
+        continueOnError: false
+        commitAuthor:
+        apiKey: **unset**
+        remoteBuild: false
+        repository:
+            enabled: false
+            name: chocolatey-bucket
+            token: **unset**
+    docker:
+        enabled: false
+        useLocalArtifact: true
+        buildx:
+            enabled: false
+            createBuilder: true
+        commitAuthor:
+        repository:
+            enabled: false
+            name: docker
+            token: **unset**
+            versionedSubfolders: false
+        continueOnError: false
+    flatpak:
+        enabled: false
+        continueOnError: false
+        commitAuthor:
+        repository:
+            enabled: false
+            name: flatpak
+            token: **unset**
+    gofish:
+        enabled: false
+        continueOnError: false
+        commitAuthor:
+        repository:
+            enabled: false
+            name: fish-food
+            token: **unset**
+    jbang:
+        enabled: false
+        continueOnError: false
+        commitAuthor:
+        repository:
+            enabled: false
+            name: jbang-catalog
+            token: **unset**
+    jib:
+        enabled: false
+        commitAuthor:
+        repository:
+            enabled: false
+            name: jib
+            token: **unset**
+            versionedSubfolders: false
+        continueOnError: false
+    macports:
+        enabled: false
+        continueOnError: false
+        commitAuthor:
+        repository:
+            enabled: false
+            name: macports
+            token: **unset**
+    scoop:
+        enabled: false
+        continueOnError: false
+        commitAuthor:
+        repository:
+            enabled: false
+            name: scoop
+            token: **unset**
+    sdkman:
+        enabled: false
+        continueOnError: false
+        connectTimeout: 0
+        readTimeout: 0
+        consumerKey: **unset**
+        consumerToken: **unset**
+    snap:
+        enabled: false
+        continueOnError: false
+        commitAuthor:
+        remoteBuild: false
+        repository:
+            enabled: false
+            name: snap
+            token: **unset**
+    spec:
+        enabled: false
+        continueOnError: false
+        commitAuthor:
+        repository:
+            enabled: false
+            name: spec
+            token: **unset**
+    winget:
+        enabled: false
+        continueOnError: false
+        commitAuthor:
+        package:
+        publisher:
+        installer:
+            type: WIX
+            scope: MACHINE
+            upgradeBehavior: INSTALL
+            dependencies:
+        repository:
+            enabled: false
+            name: winget
+            token: **unset**
+ 
+download:
+    enabled: true
+ 
+assemble:
+    enabled: true
+ 
+deploy:
+    enabled: true
+    active: ALWAYS
+    maven:
+        enabled: true
+        active: ALWAYS
+        pomchecker:
+            version: 1.14.0
+            failOnWarning: true
+            failOnError: true
+            strict: true
+        mavenCentral:
+            scaffold-desktop:
+                enabled: true
+                active: ALWAYS
+                connectTimeout: 20
+                readTimeout: 60
+                authorization: BASIC
+                url: https://central.sonatype.com/api/v1/publisher
+                username: ************
+                password: ************
+                sign: true
+                checksums: true
+                sourceJar: true
+                javadocJar: true
+                verifyPom: true
+                applyMavenCentralRules: true
+                snapshotSupported: false
+                stagingRepositories:
+                    build/staging-deploy
+                stage: FULL
+                namespace: io.github.nullpops
+                verifyUrl: https://repo1.maven.org/maven2/{{path}}/{{filename}}
+                retryDelay: 20
+                maxRetries: 100
+ 
+upload:
+    enabled: true
+ 
+catalog:
+    enabled: true
+    github:
+        enabled: false
+        active: NEVER
+        artifacts: true
+        files: true
+        deployables: true
+    sbom:
+        enabled: true
+        cyclonedx:
+            enabled: false
+            active: NEVER
+            distributions: false
+            files: false
+            pack:
+                enabled: false
+        syft:
+            enabled: false
+            active: NEVER
+            distributions: false
+            files: false
+            pack:
+                enabled: false
+    slsa:
+        enabled: false
+        active: NEVER
+        artifacts: true
+        files: true
+        deployables: true
+    swid:
+        enabled: false
+        name: swid-tag
+        corpus: false
+        patch: false
+ 
+[INFO]  Project version set to 1.0.0
+[INFO]  Release is not snapshot
+[INFO]  Timestamp is 2025-08-31T18:04:13.0450057-04:00
+[INFO]  Platform is windows-x86_64
+[DEBUG] loading extension default-jreleaser-mustache:org.jreleaser.extensions.internal.mustache.DefaultMustacheExtension
+[DEBUG] adding org.jreleaser.extensions.internal.mustache.DefaultMustacheExtensionPoint from default-jreleaser-mustache extension
+[INFO]  yolo set to false
+[INFO]  dry-run set to true
+[INFO]  Deploying Maven artifacts
+[INFO]    [maven] Deploying all staged artifacts
+[INFO]      [mavenCentral] Deploying to scaffold-desktop
+[INFO]      [mavenCentral] Verifying prerequisites
+[INFO]      [mavenCentral] Verifying POMs
+[DEBUG]     [mavenCentral] Cannot run program "pomchecker.bat": CreateProcess error=2, The system cannot find the file specified
+[DEBUG]     [mavenCentral] cached C:\Users\tyler\.jreleaser\caches\pomchecker\1.14.0\pomchecker-1.14.0\bin\pomchecker.bat
+[DEBUG]     [mavenCentral] ------------------------------------------------------------
+[DEBUG]     [mavenCentral] 
+[DEBUG]     [mavenCentral] pomchecker 1.14.0
+[DEBUG]     [mavenCentral] 
+[DEBUG]     [mavenCentral] ------------------------------------------------------------
+[DEBUG]     [mavenCentral] 
+[DEBUG]     [mavenCentral] Build timestamp: 2024-10-23T08:22:02Z
+[DEBUG]     [mavenCentral] 
+[DEBUG]     [mavenCentral] Revision:        33edbd4b8e7f5c5b95d61852ca0b99d6e13dce10
+[DEBUG]     [mavenCentral] 
+[DEBUG]     [mavenCentral] JVM:             23.0.2 (Oracle Corporation 23.0.2+7-58)
+[DEBUG]     [mavenCentral] 
+[DEBUG]     [mavenCentral] ------------------------------------------------------------
+[DEBUG]     [mavenCentral] 
+[DEBUG]     [mavenCentral] Verifying C:\Users\tyler\OneDrive\Documents\code\awt-compose-scaffold-mp\scaffold-desktop\build\staging-deploy\io\github\nullpops\scaffold-desktop\1.0.0\scaffold-desktop-1.0.0.pom
+[DEBUG]     [mavenCentral] Verifying C:\Users\tyler\OneDrive\Documents\code\awt-compose-scaffold-mp\scaffold-desktop\build\staging-deploy\io\github\nullpops\desktop\1.0.0\desktop-1.0.0.pom
+[INFO]      [mavenCentral] Signing key C6C072AA419AC0A5 expires at 2035-08-23T18:38:50
+[INFO]      [mavenCentral] Checking if key C6C072AA419AC0A5 has been published
+[DEBUG]     [mavenCentral]  + https://keys.openpgp.org
+[DEBUG]     [mavenCentral]  + https://keys.openpgp.org
+[DEBUG]     [mavenCentral]  x https://keys.openpgp.org
+[INFO]      [mavenCentral] Key C6C072AA419AC0A5 was found as published
+[DEBUG]     [sign] signature does not exist: build\staging-deploy\io\github\nullpops\scaffold-desktop\1.0.0\scaffold-desktop-1.0.0.pom.asc
+[INFO]      [sign] build\staging-deploy\io\github\nullpops\scaffold-desktop\1.0.0\scaffold-desktop-1.0.0.pom
+[DEBUG]     [verify] build\staging-deploy\io\github\nullpops\scaffold-desktop\1.0.0\scaffold-desktop-1.0.0.pom.asc
+[DEBUG]     [sign] signature does not exist: build\staging-deploy\io\github\nullpops\scaffold-desktop\1.0.0\scaffold-desktop-1.0.0-javadoc.jar.asc
+[INFO]      [sign] build\staging-deploy\io\github\nullpops\scaffold-desktop\1.0.0\scaffold-desktop-1.0.0-javadoc.jar
+[DEBUG]     [verify] build\staging-deploy\io\github\nullpops\scaffold-desktop\1.0.0\scaffold-desktop-1.0.0-javadoc.jar.asc
+[DEBUG]     [sign] signature does not exist: build\staging-deploy\io\github\nullpops\scaffold-desktop\1.0.0\scaffold-desktop-1.0.0-sources.jar.asc
+[INFO]      [sign] build\staging-deploy\io\github\nullpops\scaffold-desktop\1.0.0\scaffold-desktop-1.0.0-sources.jar
+[DEBUG]     [verify] build\staging-deploy\io\github\nullpops\scaffold-desktop\1.0.0\scaffold-desktop-1.0.0-sources.jar.asc
+[DEBUG]     [sign] signature does not exist: build\staging-deploy\io\github\nullpops\scaffold-desktop\1.0.0\scaffold-desktop-1.0.0.jar.asc
+[INFO]      [sign] build\staging-deploy\io\github\nullpops\scaffold-desktop\1.0.0\scaffold-desktop-1.0.0.jar
+[DEBUG]     [verify] build\staging-deploy\io\github\nullpops\scaffold-desktop\1.0.0\scaffold-desktop-1.0.0.jar.asc
+[DEBUG]     [sign] signature does not exist: build\staging-deploy\io\github\nullpops\scaffold-desktop\1.0.0\scaffold-desktop-1.0.0.module.asc
+[INFO]      [sign] build\staging-deploy\io\github\nullpops\scaffold-desktop\1.0.0\scaffold-desktop-1.0.0.module
+[DEBUG]     [verify] build\staging-deploy\io\github\nullpops\scaffold-desktop\1.0.0\scaffold-desktop-1.0.0.module.asc
+[DEBUG]     [mavenCentral] calculating sha1 checksum for scaffold-desktop-1.0.0.module
+[DEBUG]     [mavenCentral] copying files from C:\Users\tyler\OneDrive\Documents\code\awt-compose-scaffold-mp\scaffold-desktop\build\staging-deploy to C:\Users\tyler\AppData\Local\Temp\maven-central13272500322087602633
+[INFO]      [mavenCentral]  - io.github.nullpops-scaffold-desktop-1.0.0-bundle.zip
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[DEBUG]     [mavenCentral] opening connection
+[DEBUG]     [mavenCentral] configuring connection
+[DEBUG]     [mavenCentral] handling response
+[INFO]  Writing output properties to build\jreleaser\output.properties
+[INFO]  JReleaser succeeded after 12.876 s

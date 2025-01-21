@@ -14,9 +14,7 @@ pluginManagement {
     }
 }
 
-rootProject.name = "Meteor Multiplatform"
-include(":android")
-include(":desktop")
-include(":android-awt")
-include(":rs2")
-include(":common")
+rootProject.name = "awt-compose-scaffold-mp"
+include(":scaffold-android")
+include(":scaffold-common")
+include(":scaffold-desktop")

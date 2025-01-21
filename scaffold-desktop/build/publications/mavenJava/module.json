@@ -1,0 +1,199 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.nullpops",
+    "module": "scaffold-desktop",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 23,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "scaffold-desktop-1.0.0.jar",
+          "url": "scaffold-desktop-1.0.0.jar",
+          "size": 3111802,
+          "sha512": "2876b79ef2d3da703db4d1abf3faa707d52321fa2cbb963687bca508cc7a496004ce742baa55fd22af58ee2299a54e18b179ca9d37acb635a293a94c3fafdc27",
+          "sha256": "c2fd05142c1c1f4495fa86498d9fcfd78c1c60e89f111b92e9b1adabc4b1409a",
+          "sha1": "f7f439010fbad726c1f934685be11b38f7e15f58",
+          "md5": "35ea2145aa0f759c160f3274b3ad6044"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 23,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "awt-compose-scaffold-mp",
+          "module": "common",
+          "version": {
+            "requires": "2.1.1-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.github.nullpops",
+          "module": "logger",
+          "version": {
+            "requires": "1.0.2"
+          }
+        },
+        {
+          "group": "io.github.nullpops",
+          "module": "properties",
+          "version": {
+            "requires": "1.0.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.8.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.8.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.desktop",
+          "module": "desktop-jvm-windows-x64",
+          "version": {
+            "requires": "1.8.2"
+          }
+        },
+        {
+          "group": "nulled",
+          "module": "eventbus",
+          "version": {
+            "requires": "1.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-reflect",
+          "version": {
+            "requires": "2.2.0"
+          }
+        },
+        {
+          "group": "br.com.devsrsouza.compose.icons",
+          "module": "line-awesome",
+          "version": {
+            "requires": "1.1.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.8.2"
+          }
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.13.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "scaffold-desktop-1.0.0.jar",
+          "url": "scaffold-desktop-1.0.0.jar",
+          "size": 3111802,
+          "sha512": "2876b79ef2d3da703db4d1abf3faa707d52321fa2cbb963687bca508cc7a496004ce742baa55fd22af58ee2299a54e18b179ca9d37acb635a293a94c3fafdc27",
+          "sha256": "c2fd05142c1c1f4495fa86498d9fcfd78c1c60e89f111b92e9b1adabc4b1409a",
+          "sha1": "f7f439010fbad726c1f934685be11b38f7e15f58",
+          "md5": "35ea2145aa0f759c160f3274b3ad6044"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "scaffold-desktop-1.0.0-sources.jar",
+          "url": "scaffold-desktop-1.0.0-sources.jar",
+          "size": 3063630,
+          "sha512": "0ae0b17044d614c5dd868f165d3fc261c92e858133b50f046f18d675ab5c43c696941b0aea5ca5ad64402b79e845628b6f0050d438f69d392a27d9a457086957",
+          "sha256": "d2ae19f1896bfb48c2ae31069ed01e40c60ac9209b51daa3189a1aff9556a0d9",
+          "sha1": "a42ec2453bbfad1dcc2580d06dcce10f18b9e392",
+          "md5": "bf145ce50623c7900878a57880cd2d4a"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "scaffold-desktop-1.0.0-javadoc.jar",
+          "url": "scaffold-desktop-1.0.0-javadoc.jar",
+          "size": 261,
+          "sha512": "0cecd08cb5a20e9d6429403f6853ac803f405d1ddeca078b07b2237448f9ecfb86b6ce0f8828a86918fea78a126d359e398b1d28371f3a4d0fbdc78e17efdceb",
+          "sha256": "c02d87a9b8d2e75fc60b7d53daf8a6c255b02202f5df625c0c1541828219e35c",
+          "sha1": "1f81f037da04e363062afb05047209bd0b9c6e60",
+          "md5": "884eda393f6c1c11b826ae6e4af4038d"
+        }
+      ]
+    }
+  ]
+}
